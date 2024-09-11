@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spam Email Detector</title>
+  <style>
+    body { font-family: 'Alegreya Sans SC', sans-serif;color:azure; padding: 20px;background-color: rgb(40, 39, 39); }
+    #result { margin-top: 20px; font-weight: bold; }
+    
+    button{
+      margin-left: 0%;
+      margin-top: 10px;
+      cursor: pointer;
+  width: 120px;
+  height: 50px;
+  font-size: 14px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color:azure;
+  display: block;
+ 
+  transition: all 0.3s;
+      background-color: #4cda25;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.25),
+              0 4px 0 rgb(40, 198, 26),
+              0 4px 6px rgba(0,0,0,0.45);
+    }
+    button:hover{
+      transition: all 0.2s;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.45);
+      transform: translateY(4px);
+    }
+    button:active{
+      background-color: #62b52b;
+    }
+   
+    textarea{
+      color: azure;
+      background-color: rgb(67, 67, 67);
+      border-radius: 5%;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 >Spam Email Detector</h1>
+  <textarea id="emailContent" placeholder="Paste email content here" rows="10" cols="30"></textarea>
+  <br>
+  <button id="checkEmail">Check Email</button>
+  <div id="result" ></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
